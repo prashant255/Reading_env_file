@@ -35,6 +35,7 @@ function createTable(list) {
         } 
     } 
     var table = document.getElementById("table"); 
+    table.textContent=""
     table.style.visibility = "visible";
     var tr = table.insertRow(-1); 
       
