@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        <div class="main-content">
+            {{>header}}
+
+            <form id="form-2">
+                <input placeholder="Enironment Name" id=ip1>
+                <input placeholder="Key to Add" id=ip2>
+                <input placeholder="Value to Add" id=ip3>
+                <button>Update Environment</button>
+            </form>
+            <br>
+            <p id="message"></p>
+            <table id="table" border="1px"></table> 
+        </div>
+        {{>footer}}
+
+        <script src="/js/update.js"></script>
+    </body>
+
+</html>
