@@ -8,7 +8,7 @@ createForm.addEventListener('submit', (e) => {
     if(envName === '')
         message.textContent = "Error! Please enter Environment name."
     else{
-        fetch('http://localhost:3000/createNewEnvironment/' + envName).then((response) => {
+        fetch('/createNewEnvironment/' + envName).then((response) => {
             response.text().then((data) => {
                 message.textContent = data
             })

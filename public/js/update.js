@@ -16,7 +16,7 @@ updateForm.addEventListener('submit', (e) => {
         message.textContent = "Error! Please enter value to add to environment variable"
         document.getElementById("table").style.visibility = "hidden";
     }else{
-        fetch('http://localhost:3000/setEnvironment/' + envName + "/" + key + "/" + value).then((response) => {
+        fetch('/setEnvironment/' + envName + "/" + key + "/" + value).then((response) => {
             response.json().then((data) => {
                 if(data.error) {
                     document.getElementById("table").style.visibility = "hidden";

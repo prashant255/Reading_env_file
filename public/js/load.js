@@ -10,7 +10,7 @@ loadForm.addEventListener('submit', (e) => {
         document.getElementById("table").style.visibility = "hidden";
     }
     else{
-        fetch('http://localhost:3000/getEnvironment/' + envName).then((response) => {
+        fetch('/getEnvironment/' + envName).then((response) => {
             response.json().then((data) => {
                 if(data.error) {
                     document.getElementById("table").style.visibility = "hidden";
