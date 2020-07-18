@@ -10,9 +10,9 @@ Here we read .env file and convert it into json
 2. Then open the project in localhost:3000
 
 About:
-There are two environment created: Process1 and Process2. Load process1 or process usinf Load Env tab.
-Using Update Env you can add new variable to the environment
-Using Create Env you can create new Environment
+1. There are two environment created: Process1 and Process2. Load process1 or process usinf Load Env tab.
+2. Using Update Env you can add new variable to the environment
+3. Using Create Env you can create new Environment
 
 NOTE:
 All the .env files are stored in the config folder only.
